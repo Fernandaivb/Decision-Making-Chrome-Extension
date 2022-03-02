@@ -1,0 +1,11 @@
+button {
+  color: black;
+  vertical-align: center;
+  font-size: auto;
+  padding {
+	  left: 10%;
+	  right: 10%;
+	  top: 2%;
+  }
+  align: center;
+}
