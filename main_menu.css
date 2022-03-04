@@ -1,11 +1,50 @@
-button {
-  color: black;
-  vertical-align: center;
-  font-size: auto;
-  padding {
-	  left: 10%;
-	  right: 10%;
-	  top: 2%;
-  }
-  align: center;
+#popup{
+		width:300px;
+		height:300px;
+		text-align:center;
+		line-height:40px;
+		padding-top: 60px;
+		padding-bottom: 10px;
+	}
+
+	.button {
+		padding: 10px;
+		color: white;
+		text-align: center;
+		display: block;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.button1 {
+		background-color: #FFFFD8;
+		font-family: Didot;
+		color: black;
+		margin: 5px;
+		width: 50%;
+	}
+	
+	.button2 {
+		background-color: #C7E3D0;
+		font-family: Didot;
+		color: black;
+		margin: 5px;
+		width: 50%;
+	}
+	
+	.button3 {
+		background-color: #BDD5EF;
+		font-family: Didot;
+		color: black;
+		margin: 5px;
+		width: 50%;
+	}
+	
+	.button4 {
+		background-color: white;
+		font-family: Didot;
+		color: black;
+		margin: 5px;
+		width: 50%;
+	}
 }
