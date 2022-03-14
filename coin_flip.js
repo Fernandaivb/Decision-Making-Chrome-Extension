@@ -9,3 +9,17 @@ function coinFlip() {
         coinImage.innerHTML = "<img src = 'images/coin_tails.jpg'>";
 	}
 }
+
+window.addEventListener("load", function load(event) {
+	var tryAgain = document.getElementById("try_again");
+	tryAgain.addEventListener("click", function() {
+		coinFlip();
+	});
+});
+
+document.getElementById("try_again").addEventListener("click", coinFlip);
+
+
+
+
+
