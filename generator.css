@@ -1,1 +1,9 @@
 /* generator make look good file */
+#popup {
+	width:300px;
+	height:300px;
+	text-align:center;
+	line-height:40px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
