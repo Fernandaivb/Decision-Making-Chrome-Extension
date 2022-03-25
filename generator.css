@@ -1,4 +1,3 @@
-/* generator make look good file */
 #popup {
 	width:300px;
 	height:300px;
@@ -6,4 +5,27 @@
 	line-height:40px;
 	padding-top: 60px;
 	padding-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+
+.button {
+	padding: 10px;
+	color: #CD5C5C;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.return_to_main {
+	background-color: #90EE90;
+	font-family: Didot;
+	color: black;
+	margin: 5px;
+	width: 50%;
 }
