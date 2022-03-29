@@ -3,14 +3,19 @@
 <head>
   <title>Random Number Generator</title>
   <script src = "generator.js"></script>
-  <script src = "gps/gps.js"></script>
   <link rel = "stylesheet" type = "text/css" href = "generator.css"></link>
 </head>
 <body>
-  <div id = "popup">
-    <button class = "button return_to_main">
-      <a href = "main_menu.html">Main Menu</a>
-	</button>
-  </div>
+    <div id = "popup">
+		<button class = "return_to_main">
+		<a href = "main_menu.html">Return</a>
+		</button>
+	</div>
+	
+	<h1> Random Number Generator</h1>
+	Lower Bound: <input type="text" class="min" min="0"><br>
+	Upper Bound: <input type="text" class="max" max="4294967295"><br>
+	<button id="randomize" onclick="randomNumber()">Generate</button><br>
+	Result: <div id="result"></div>
 </body>
 </html>
