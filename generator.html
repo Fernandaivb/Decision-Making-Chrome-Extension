@@ -7,15 +7,15 @@
 </head>
 <body>
     <div id = "popup">
-		<button class = "return_to_main">
-		<a href = "main_menu.html">Return</a>
+		<button class = "button return_to_main">
+		<a href = "main_menu.html">Main Menu</a>
 		</button>
 	
 	<h1> Random Number Generator</h1>
-	Lower Bound: <input type="text" class="min" min="0"><br>
-	Upper Bound: <input type="text" class="max" max="4294967295"><br>
-	<button id="randomize" onclick="randomNumber()">Generate</button><br>
-	Result: <div id="result"></div>
+	Bound: <input type="text" class="min" min="0" required placeholder = "Enter Value"><br>
+	Bound: <input type="text" class="max" max="4294967295"  required placeholder = "Enter Value"><br>
+	<button class = "button" id = "randomize">Generate</button><br>
+	<span style = "font-size: 20px">Result: <div id="result"></div> </span> 
 	</div>
 </body>
 </html>
