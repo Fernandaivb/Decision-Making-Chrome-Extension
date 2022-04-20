@@ -13,3 +13,13 @@ window.addEventListener("load", function load(event) {
 		randomNumber();
 	});
 });
+
+function customErrorMsg() {
+	var error = document.getElementById("error");
+	if (isNaN(document.getElementById("min").value)) {
+		error.textContent = "Please enter a number";
+		error.style.color = "red"
+	} else {
+		error.textContent = "";
+	}
+}
