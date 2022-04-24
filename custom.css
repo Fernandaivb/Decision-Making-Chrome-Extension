@@ -2,9 +2,9 @@
     width:300px;
     height:300px;
     text-align:center;
-    line-height:40px;
-    padding-top: 0px;
-    padding-bottom: 10px;
+    line-height:30px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 
 a {
@@ -14,13 +14,21 @@ a {
 }
 
 .button {
-    padding: 10px;
-    color: white;
-    text-align-center;
-    display: block;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
+	padding: 10px;
+	color: #CD5C5C;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#execute {
+  background-color: #00bbff;
+	font-family: Didot;
+	color: black;
+	margin: 5px;
+	width: 50%;
+  text-align: center;
 }
 
 .return_to_main {
@@ -29,4 +37,105 @@ a {
     color: black;
     margin: 5px;
     width: 50%;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	left: 25px;
+	outline: none;
+  }
+  
+  body{
+	font-family: "Open Sans";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	overflow: hidden;
+  }
+
+  .mainbox{
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.mainbox:after{
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('images/arrow-left.png') no-repeat;
+  background-size: 32px;
+  right: -5px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.box{
+  width: 80%;
+  height: 80%;
+  position: relative;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all ease 5s;
+}
+
+triangle{
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.triangle1{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #fffb00;
+  bottom: 0px;
+  left: 0;
+  text-align: center;
+}
+.triangle2{
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  background-color: #ff4fa1;
+  top: 0px;
+  left: 0;
+  text-align: center;
+}
+.triangle3{
+  clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  background-color: #ffaa00;
+  bottom: 0;
+  left: 95px;
+  text-align: center;
+}
+.triangle4{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  background-color: #22ff00;
+  top: 0;
+  left: 95px;
+  text-align: center;
+}
+
+.spin{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #001aff;
+  color: #fff;
+  box-shadow: 0 5px 20px #000;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.spin:active{
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
 }
